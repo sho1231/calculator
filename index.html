@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body style="background-color:silver">
+    <script src="script.js"></script>
+    <div class="layout1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="calbox">
+                        <p id="result" class="alignment" style="padding-right:23px">0</p>
+                        <div id="expr" class="aligment">
+                            <form id="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="evaluate" style="width:94%;height:3%;text-align:right">
+                                </div>
+                            </form>
+                            <button type="button" class="button button5" style="margin-top:22px" onclick="document.getElementById('evaluate').value+='7'">7</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='8'">8</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='9'">9</button>
+                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='+'"  style="margin-left:33px">+</button>
+                            <button type="button" class="button button5" style="margin-top:22px" id="4" onclick="document.getElementById('evaluate').value+='4'">4</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='5'">5</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='6'">6</button>
+                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='-'" style="margin-left:33px">-</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='1'" style="margin-top:22px" >1</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='2'">2</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='3'">3</button>
+                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='*'" style="margin-left:33px">×</button>
+                            <button type="button" class="button button5" onclick="reset()" style="margin-top:22px;background-color:#ff000094" >C</button>
+                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='0'">0</button>
+                            <button type="button" class="button button5" onclick="display()" style="background-color:green">=</button>
+                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='/'" style="margin-left:33px">/</button>
+                    </div>
+                    <!-- col -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- layout1 -->
+    </div>
+</body>
+</html>
