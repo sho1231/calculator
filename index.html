@@ -11,42 +11,71 @@
 </head>
 <body style="background-color:silver">
     <script src="script.js"></script>
-    <div class="layout1">
+    <div class="layout1 ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="calbox" style="box-shadow:0px 0px 50px rgba(100,100,100,0.5)">
-                        <p id="result" class="alignment" style="padding-right:23px">0</p>
-                        <div id="expr" class="aligment">
-                            <form id="form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="evaluate" style="width:94%;height:3%;text-align:right">
-                                </div>
-                            </form>
-                            <button type="button" class="button button5" style="margin-top:22px" onclick="document.getElementById('evaluate').value+='7'">7</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='8'">8</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='9'">9</button>
-                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='+'"  style="margin-left:33px">+</button>
-                            <button type="button" class="button button5" style="margin-top:22px" id="4" onclick="document.getElementById('evaluate').value+='4'">4</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='5'">5</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='6'">6</button>
-                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='-'" style="margin-left:33px">-</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='1'" style="margin-top:22px" >1</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='2'">2</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='3'">3</button>
-                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='*'" style="margin-left:33px">×</button>
-                            <button type="button" class="button button5" onclick="reset()" style="margin-top:22px;background-color:#ff000094" >C</button>
-                            <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='0'">0</button>
-                            <button type="button" class="button button5" onclick="display()" style="background-color:green">=</button>
-                            <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='/'" style="margin-left:33px">/</button>
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="calbox col-auto " style="box-shadow:0px 0px 50px rgba(100,100,100,0.5)">
+                            <p id="result" class="alignment" style="padding-right:23px">0</p>
+                            <div id="expr" class="aligment">
+                                <form id="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="evaluate" style="width:94%;height:3%;text-align:right">
+                                    </div>
+                                </form>
+                                
+                                <div class="cc">
+                                    <div class="row py-2 justify-content-end" >
+                                <button type="button" class="button button5"  onclick="document.getElementById('evaluate').value+='7'">7</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='8'">8</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='9'">9</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='+'"  >+</button>
+                                <div class="col"></div>
+                                      </div>
+                                      <div class="row py-2 justify-content-end" >
+                                <button type="button" class="button button5"  id="4" onclick="document.getElementById('evaluate').value+='4'">4</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='5'">5</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='6'">6</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='-'" >-</button>
+                                <div class="col"></div>
+                                      </div>
+                                      <div class="row py-2" >
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='1'" >1</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='2'">2</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='3'">3</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='*'" >×</button>
+                                <div class="col"></div>
+                                      </div>
+                                      <div class="row py-2" >
+                                <button type="button" class="button button5" onclick="reset()" style="background-color:#ff000094" >C</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="document.getElementById('evaluate').value+='0'">0</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5" onclick="display()" style="background-color:green">=</button>
+                                <div class="col"></div>
+                                <button type="button" class="button button5 operators" onclick="document.getElementById('evaluate').value+='/'" >/</button>
+                                <div class="col"></div>
+                                      </div>
+                        </div>
                     </div>
-                    <!-- col -->
-                </div>
+                        <!-- col -->
+                    </div>
+                    </div>
+                    
                 <!-- row -->
             </div>
             <!-- container -->
-        </div>
         <!-- layout1 -->
+    </div>
     </div>
 </body>
 </html>
